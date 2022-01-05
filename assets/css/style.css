@@ -12,8 +12,11 @@
   
   /* apply styles to <header> */
   header {
+    display: flex;
     padding: 20px 35px;
     background-color: #39a6b2;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   header h1 {
@@ -21,7 +24,6 @@
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
   }
 
   header a {
@@ -30,7 +32,6 @@
   }
   
   header nav {
-    float: right;
     margin: 7px 0;
   }
   
@@ -72,16 +73,18 @@
     padding: 60px;
   }
   
-  /* Hero Style Start */
-  .hero { 
-    background-image: url("../images/hero-bg.jpg");
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+/* Hero Style Start */
+.hero { 
+  background-image: url("../images/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   }
 
-.building-habits {
+.hero-cta {
+  display: flex;
+  flex-direction: column;
   width: 500px;
   padding: 20px;
   bottom: 120px;
@@ -89,14 +92,14 @@
   text-align: right;
   
 }
-.building-habits h2 {
+.hero-cta h2 {
   font-size: 40px;
   margin: 0;
   color: #fce138;
   font-style: italic;
 }
 
-.building-habits p {
+.hero-cta p {
   font-size: 24px;
   margin: 5px 0 15px 0;
   color: #ffff;
